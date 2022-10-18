@@ -10,6 +10,9 @@ const  App = () => {
   <button onClick={handleClick}>
     Click me
   </button>
+
+  <p>Fix</p>
+
 </>
   );
 }
