@@ -1,18 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import IhorPage from "./pages/ihor/IhorPage";
 
-const  App = () => {
-  const handleClick = () => console.log("clicked")
-  return (
-<>
-<h2>it's me</h2>
+const App = () => {
+    const handleClick = () => console.log("clicked")
+    return (
+        <>
+            <h1>Main</h1>
+            <div>
+                <button>Click</button>
+            </div>
+
+            <h2>it's me</h2>
 
   <button onClick={handleClick}>
     Click me
   </button>
 
   <p>Fix</p>
-
+          <IhorPage />
 </>
   );
 }
