@@ -16,10 +16,12 @@ const App = () => {
                 Click me
             </button>
 
-            <p>Fix</p>
-            <IhorPage/>
-        </>
-    );
+  <p>Fix</p>
+          <IhorPage />
+
+            <p>Hot fix</p>
+</>
+  );
 }
 
 export default App;
