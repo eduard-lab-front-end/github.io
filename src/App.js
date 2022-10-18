@@ -12,14 +12,14 @@ const App = () => {
 
             <h2>it's me</h2>
 
-  <button onClick={handleClick}>
-    Click me
-  </button>
+            <button onClick={handleClick}>
+                Click me
+            </button>
 
-  <p>Fix</p>
-          <IhorPage />
-</>
-  );
+            <p>Fix</p>
+            <IhorPage/>
+        </>
+    );
 }
 
 export default App;
