@@ -1,24 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import IhorPage from "./pages/ihor/IhorPage";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+const App = () => {
+    const handleClick = () => console.log("clicked")
+    return (
+        <>
+            <h1>Main</h1>
+            <div>
+                <button>Click</button>
+            </div>
+
+            <h2>it's me</h2>
+
+  <button onClick={handleClick}>
+    Click me
+  </button>
+
+  <p>Fix</p>
+          <IhorPage />
+</>
   );
 }
 
