@@ -18,6 +18,8 @@ const App = () => {
 
   <p>Fix</p>
           <IhorPage />
+
+            <p>Hot fix</p>
 </>
   );
 }
