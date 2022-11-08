@@ -32,9 +32,10 @@ const App = () => {
                 />
                 {/*<Route exact path={AppRoutes.MAIN} element={<h1>Home screen</h1>}/>*/}
                 {/*<Route exact path={AppRoutes.DASHBOARD} element={<h1>Dashboard</h1>}/>*/}
-                <Route
-                    path={AppRoutes.IHOR}
-                    element={ <PrivateRoute authUser={authUser} Component={IhorPage} />} exact />
+                {/*<Route*/}
+                {/*    path={AppRoutes.IHOR}*/}
+                {/*    element={ <PrivateRoute authUser={authUser} Component={IhorPage} />} exact />*/}
+                <Route path={AppRoutes.IHOR}  element={<IhorPage />}/>
                 <Route path={AppRoutes.NOT_FOUND_PAGE}  element={<h1>404</h1>}/>
                 <Route path="*" element={<h1>404</h1>}/>
 
