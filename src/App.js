@@ -4,6 +4,7 @@ import { Routes, Route, Link } from "react-router-dom";
 import { AppRoutes, redirectRoutes } from "./components/routing/AppRoutes";
 import Login from "./pages/Login/Login";
 import { PrivateRoute, PublicRoute } from "./components/HOC/RoutingHOC";
+import ReduxComponent from "./pages/Redux/ReduxComponent";
 
 const App = () => {
     // const { REACT_APP_API } = process.env
@@ -22,6 +23,7 @@ const App = () => {
 
             <Routes>
                 <Route exact path={AppRoutes.MAIN} element={<h1>Home screen</h1>}/>
+                <Route exact path={AppRoutes.Redux} element={<ReduxComponent />}/>
                 <Route
                     exact path={AppRoutes.SIGN_IN}
                     element={<PublicRoute authUser={authUser} Component={Login} page="Sign In"/>}
@@ -30,6 +32,8 @@ const App = () => {
                        path={AppRoutes.SIGN_UP}
                        element={<PublicRoute authUser={authUser} Component={Login} page="Sign Up"/>}
                 />
+                <Route exact path={AppRoutes.MAIN} element={<h1>Home screen</h1>}/>
+
                 {/*<Route exact path={AppRoutes.MAIN} element={<h1>Home screen</h1>}/>*/}
                 {/*<Route exact path={AppRoutes.DASHBOARD} element={<h1>Dashboard</h1>}/>*/}
                 {/*<Route*/}

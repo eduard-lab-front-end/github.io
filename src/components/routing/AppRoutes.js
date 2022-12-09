@@ -8,6 +8,7 @@ export const AppRoutes = {
     SIGN_UP: "/signUP",
    PHOTOS: "/photos",
    NOT_FOUND_PAGE: "/404",
+    Redux: "/redux"
 }
 
 export const redirectRoutes = {
